@@ -1,0 +1,7 @@
+export default function Footer() {
+  return (
+    <footer className="text-center text-sm py-4 text-text">
+      © {new Date().getFullYear()} Resume Matcher
+    </footer>
+  );
+}

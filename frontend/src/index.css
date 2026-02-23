@@ -1,13 +1,54 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/* Tailwind base imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Corporate theme variables */
+:root {
+  --color-bg: hsl(202, 40%, 96%);      /* Light grey background */
+  --color-primary: #0D2B45; /* Deep corporate navy */
+  --color-accent: #0056B3;  /* Bright blue */
+  --color-text: #1F2937;    /* Dark grey text */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Global body styles */
+body {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Headings */
+h1, h2, h3, h4 {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* Links */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons */
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: 500;
+  background-color: var(--color-accent);
+  color: white;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: #003f8a;
 }
